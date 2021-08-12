@@ -41,9 +41,7 @@ function draw() {
 
     if(box2.isTouching(square)){
         square.shapeColor = rgb(255,128,0);
-        square.velocityX = 0.5;
-        square.velocityY = 0.2;
-        music.stop();
+        
     }
 
     if(box3.isTouching(square) && square.bounceOff(box3)){
