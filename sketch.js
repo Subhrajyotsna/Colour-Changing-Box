@@ -37,19 +37,26 @@ function draw() {
 
     if(box1.isTouching(square) && square.bounceOff(box1)){
         square.shapeColor = rgb(0,0,255);
-        music.play();}
+        music.play();
+    }
 
     if(box2.isTouching(square)){
         square.shapeColor = rgb(255,128,0);
+        music.stop();
+        music.play();
         
     }
 
     if(box3.isTouching(square) && square.bounceOff(box3)){
         square.shapeColor = rgb(153,0,76);
+         music.stop();
+        music.play();
     }
 
     if(box4.isTouching(square) && square.bounceOff(box4)){
         square.shapeColor = rgb(0,100,0);
+         music.stop();
+        music.play();
     }
 
     drawSprites();
